@@ -25,7 +25,7 @@ h1{
 }
 
 #home-page{
-    background:url("https://images.unsplash.com/photo-1475477793686-225275e4c4d9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=23a48b1ec4687cffabac2d5dacc360b7");
+    background:url("https://images.unsplash.com/photo-1475477793686-225275e4c4d9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=23a48b1ec4687cffabac2d5dacc360b7") center no-repeat fixed;
     background-size: cover;
     height: 900px;
     padding-top: 100px;
