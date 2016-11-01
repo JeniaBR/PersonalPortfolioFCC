@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -34,8 +34,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home-page">Home</a></li>
+                    <li><a href="#about-page">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -44,19 +44,39 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div class="container-fluid">
+        <div id="home-page">
+            <h1>Brook Web Design Studio</h1>
+            <h2>Where your ideas become reality</h2>
+            <hr class="br-line">
+            <div class="btnList">
+                <a class="btn btn-default" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>Twitter</a>
+                <a class="btn btn-default" href="#"><i class="fa fa-github fa-lg" aria-hidden="true"></i>Github</a>
+                <a class="btn btn-default" href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>Linkedin</a>
+                <a class="btn btn-default" href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i>YouTube</a>
+            </div>
 
-    <div id="home-page">
-        <h1>Brook Web Design Studio</h1>
-        <h2>Where your ideas become reality</h2>
-        <hr class="br-line">
-        <div class="btnList">
-            <a class="btn btn-default" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>Twitter</a>
-            <a class="btn btn-default" href="#"><i class="fa fa-github fa-lg" aria-hidden="true"></i>Github</a>
-            <a class="btn btn-default" href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>Linkedin</a>
-            <a class="btn btn-default" href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i>YouTube</a>
+
         </div>
 
+        <div id="about-page">
+            <h1>About Myself</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Here will be the discription about me :)</h4>
+                    <p>I'm a self taught web designer, developer, and entrepreneur based in Israel. I'm currently part of a small development team in an upcoming start-up. I'm responsible for all of my company's web development needs.</p>
+                    <p>
+                        My passion is to use technology based solutions, to help solve real world challenges.</p>
+                    <p>
+                        <strong>Competences:</strong>
+                        <br> Languages and Frameworks: Javascript, C#m HTML5, CSS3, jQuery, Bootstrap3, Angular.js, Meteor.js.<br> <strong>Tools & expertise:</strong><br> Git, Responsive Web Design, Agile Methodologies, Unity5 3D, Photoshop, VR Level Design, and Unity Generalist.</p>
+                </div>
+                <div class="col-sm-6" id="my-picture">
+                    <img class="img-responsive img-circle" src="https://media.licdn.com/media/AAEAAQAAAAAAAALlAAAAJDA1NWUyOTBjLTkxOWQtNDE3ZC1iOTRkLTZhNmM2YzAxMDY4YQ.jpg">
+                </div>
+            </div>
 
+        </div>
     </div>
 
 </body>
