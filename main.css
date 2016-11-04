@@ -9,6 +9,9 @@ body {
     color: #f5f5f5;
     font-family: "Oswald", cursive;
 }
+.container-fluid {
+  padding: 0px;
+}
 h1,
 h2,
 h3,
@@ -18,29 +21,41 @@ h6 {
     font-family: "Space Mono", cursive;
 }
 h1 {
-    font-size: 4em;
+    font-size: 5.3em;
     text-align: center;
 }
 #home-page {
-    background: url("https://images.unsplash.com/photo-1475477793686-225275e4c4d9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=23a48b1ec4687cffabac2d5dacc360b7") no-repeat center center fixed;
+    background: url("http://www.hdbloggers.net/wp-content/uploads/2016/10/Minimalist-Wallpaper.png") no-repeat center center;
     background-size: cover;
     height: 950px;
     padding-top: 100px;
 }
 #about-page {
-    background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e77b9e8d61ea6e83540cf48370bec56b") no-repeat center center fixed;
+    background: #085078;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgb(23, 4, 32), rgb(1, 91, 153));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgb(23, 4, 32), rgb(15, 43, 62));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     height: 950px;
     padding-top: 1px;
 }
 #portfolio-page {
-    background: url("https://images.unsplash.com/photo-1467320424268-f91a16cf7c77?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=54cacd977b05f9482f92a3a6c92e8742") no-repeat center center fixed;
+    background: #466368;
+    background: -webkit-linear-gradient(to top, #0f5db9, rgb(10, 6, 24));
+    background: -moz-linear-gradient(to top, #0f5db9, rgb(10, 6, 24));
+    background: linear-gradient(to top, #0f5db9, rgb(10, 6, 24));
     background-size: cover;
     height: 950px;
     padding-top: 1px;
+
 }
 #contact-page {
-    background: url("https://images.unsplash.com/photo-1472161280498-fa05daa7967b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=907d3dfc15f0bfd01505cb6579d59185") no-repeat center center fixed;
+    background: #466368;
+    background: -webkit-linear-gradient(to bottom, #0f5db9, rgb(10, 6, 24));
+    background: -moz-linear-gradient(to bottom, #0f5db9, rgb(10, 6, 24));
+    background: linear-gradient(to bottom, #0f5db9, rgb(10, 6, 24));
     background-size: cover;
     height: 950px;
     padding-top: 1px;
@@ -49,7 +64,8 @@ h1 {
     background-color: rgba(158, 40, 180, 0.9);
     margin-bottom: 0px;
     position: fixed;
-    width: 100%
+    width: 100%;
+
 }
 .navbar-brand,
 .navbar-nav>li>a {
@@ -87,7 +103,7 @@ h1 {
         margin-bottom: 3px;
     }
     h1 {
-        font-size: 2em;
+        font-size: 3.5em;
     }
     #about-page {
         height: auto;
@@ -121,7 +137,7 @@ hr.br-line {
     margin-left: 1em;
     margin-right: 1em;
 }
-.btn-default:hover{
+.btn-default:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: .3s ease-in-out;
@@ -130,6 +146,7 @@ hr.br-line {
 }
 p {
     font-size: 1.9em;
+    margin-left: 15px;
 }
 .center-img {
     margin: auto;
@@ -160,4 +177,43 @@ p {
     position: inherit;
 }
 
+.fisrt-mountain {
+    background: url("https://raw.githubusercontent.com/YuneVK/YuneVK.github.io/master/img/fondouno.png") no-repeat;
+    background-position: center bottom;
+	z-index: 5;
+}
 
+.second-mountain {
+    background: url("https://raw.githubusercontent.com/YuneVK/YuneVK.github.io/master/img/fondodos.png") no-repeat;
+    background-position: center bottom;
+	z-index: 15;
+}
+
+.third-mountain {
+    background: url("https://raw.githubusercontent.com/YuneVK/YuneVK.github.io/master/img/fondotres.png") no-repeat;
+    background-position: center bottom;
+	z-index: 25;
+}
+
+.firs-mountain, .second-mountain, .third-mountain {
+    background-size: cover;
+	position: inherit;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+.home-page-layout > h2{
+    margin-top: 550px;
+}
+
+.form-group {
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+
+#contact-page > h1 {
+    margin-top: 60px;
+}
