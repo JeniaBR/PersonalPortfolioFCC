@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src="app.js"></script>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald|Slabo+27px|Space+Mono" rel="stylesheet">
 </head>
@@ -35,10 +37,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home-page">Home</a></li>
-                    <li><a href="#about-page">About</a></li>
-                    <li><a href="#portfolio-page">Portfolio</a></li>
-                    <li><a href="#contact-page">Contact</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#home-page">Home</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#about-page">About</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#portfolio-page">Portfolio</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact-page">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -127,24 +129,33 @@
         <div id="contact-page">
             <h1>Get In Touch</h1>
             <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Humus here in stunning Israel... just feel free to drop me a line anytime.</p>
-            <form role="form">
-                <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+            <div class="col-md-5 col-md-center">
+                <div class="form-area">
+                    <form role="form">
+                        <br style="clear:both">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="300" rows="7"></textarea>
+                            <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+                        </div>
+
+                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea type="form-control" rows="15" cols="80" data-min-length="10" placeholder="Message" id="message"></textarea>
-                </div>
-            </form>
+            </div>
 
         </div>
 
