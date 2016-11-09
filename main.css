@@ -12,6 +12,7 @@ body {
 }
 .container-fluid {
     padding: 0px;
+
 }
 h1,
 h2,
@@ -31,12 +32,13 @@ h1 {
     height: 950px;
     padding-top: 100px;
 }
+
 #about-page {
     background: #085078;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, rgb(23, 4, 32), rgb(1, 91, 153));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgb(23, 4, 32), rgb(15, 43, 62));
+    background: linear-gradient(to bottom, rgb(23, 4, 32), rgb(10, 6, 24));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     height: 950px;
